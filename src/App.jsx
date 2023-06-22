@@ -48,12 +48,10 @@ function App() {
           </button>
         </div>
         <div className="input">
-          <label htmlFor="input" className="input-label">
-            ENTER COUNTRY NAME
-          </label>
-          <br />
+
           <input
             type="text"
+            placeholder="Enter Country Name"
             id="input"
             className="input-field"
             onChange={(e) => {
@@ -74,17 +72,15 @@ function App() {
         </div>
         <div className="weather-details">
           <p className="weather-data">
-            Current Temp at {query} is: {weather.temp}{" "}
+            Current Temperature is: {weather.temp}°C
           </p>
-          <p className="weather-data">Country: {weather.country}</p>
+          <p className="weather-data">Max Temperature is: {weather.max}°C</p>
+          <p className="weather-data">Min Temperature is: {weather.min}°C</p>
           <p className="weather-data">
-            Max and min Temp at {query} is: {weather.max} and {weather.min}{" "}
-          </p>
-          <p className="weather-data">
-            Feels like Temp is : {weather.feelsLike}
+            Temperature Feels like: {weather.feelsLike}°C
           </p>
           <p className="weather-data">Humidity level: {weather.humidity}</p>
-          <p className="weather-data">{weather.w_type}</p>
+          <p className="weather-data">Weather type: {weather.w_type}</p>
           <p className="weather-data">
             <img src={icon} />
           </p>

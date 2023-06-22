@@ -1,6 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* ::selection{
+  background-color: #000;
+  color: #fff;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -12,4 +20,47 @@ body {
 body.dark-mode {
   background-color: #222222;
   color: #ffffff;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.input-field{
+  display: flex;
+  margin: auto;
+  width: 50%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+
+.submit-btn{
+  display: flex;
+  margin: 10px auto auto auto ;
+}
+
+.weather-details{
+  margin: 10px auto auto auto ;
+  width: 50%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.weather-data{
+  padding: 2px;
+}
+
+button{
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
 }
